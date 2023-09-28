@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бизнес центр в Тюмени</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,19 +13,32 @@
     <div class="wrapper">
         <header class="header">
             <div class="container header__container">
-                <nav class="nav header__nav">
-                    <h5>
-                        <a href="//infoline.ru" target="_blank">
-                            <img src="img/icons/logo-icon.svg" alt="infoline">Инфолайн
-                        </a>
-                    </h5>
-                    <ul>
-                        <li><a href="index.html">Главная</a></li>
-                        <li>Аренда</li>
-                        <li>Услуги</li>
-                        <li>Контакты</li>
-                    </ul>
-                </nav>
+                <div class="menu">
+                    <a href="index.html" class="logo">
+                        <img class="logo__img" src="img/icons/logo-icon.svg" alt="Логотип">
+                        <span class="logo__title">инфолайн</span>
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Главная</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Аренда</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Услуги</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="phone">
+                        <img src="img/icons/tel.svg" alt="Телефон" class="phone__icon">
+                        <a class="phone__link" href="tel:+73452388-000">8 (3452) <span>388-000</span></a>
+                    </div>
+                </div>
             </div>
         </header>
     </div>
