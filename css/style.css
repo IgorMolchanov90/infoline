@@ -1,0 +1,14 @@
+nav {
+    margin-right: 5px;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+h5 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+}
