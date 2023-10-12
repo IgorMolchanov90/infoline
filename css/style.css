@@ -53,12 +53,18 @@ h6 {
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 .wrapper {
-    height: 100%;
+    min-height: 100%;
+    /* Скрыть все что за страницей */
+    overflow: hidden;
 }
 
 .container {
-    width: 1260px;
+    max-width: 1260px;
     margin: 0 auto;
     padding: 0px 40px 0px 40px;
 }
@@ -67,12 +73,24 @@ h6 {
 
 .header {
     position: absolute;
+    width: 100%;
+    z-index: 100;
+    padding-top: 29px;
+}
+
+.menu {
+    display: flex;
+    /* Расстояние между колонками Flex-контейнера */
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 10px;
 }
 
 .logo {
     /* Убрать подчёркивание у текста */
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 .logo__img {
@@ -91,14 +109,14 @@ h6 {
     line-height: 120%;
 }
 
-.nav {
-    display: inline-block;
-}
+.nav {}
 
 .nav__list {
     color: #FFF;
     font-family: 'Open Sans', sans-serif;
     line-height: 140%;
+    display: flex;
+    column-gap: 30px;
 }
 
 .header .nav__list {
@@ -108,11 +126,11 @@ h6 {
     /* Спрятать все что выходит за пределы блока */
     overflow: hidden;
     padding: 20px 40px 20px 40px;
+    margin-top: -29px;
 }
 
-.nav__item {
-    display: inline-block;
-}
+.nav__item {}
+
 
 .nav__link {
     /* Установить эффект плавного перехода */
@@ -125,7 +143,9 @@ h6 {
 }
 
 .phone {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
 }
 
 .phone__icon {
@@ -151,22 +171,37 @@ h6 {
     background-color: #2c3b45;
     border-bottom: 50px solid #1E92E7;
     padding-top: 133px;
+
+    /* Декоративное изображение */
+    background-image: url(../img/hero/decor.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
 }
 
 .hero__container {
     height: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .hero__content {
-    width: 602px;
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 92px;
+    /* 602px/1180=51% */
+    width: 51%;
+    /* 92px/1180px=7.8% */
+    padding-top: 7.8%;
+    padding-right: 20px;
+    /* 199px/1180px=16.9% */
+    margin-bottom: 16.9%;
 }
 
 .address {
     font-style: normal;
     margin-bottom: 35px;
+    display: flex;
+    align-items: center;
 }
 
 .address__icon {
@@ -175,20 +210,108 @@ h6 {
     margin-right: 10px;
 }
 
-.address__text {}
+.address__text {
+    color: #1E92E7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+}
 
-.title {}
+.title {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: uppercase;
+}
 
-.hero__title {}
+.hero__title {
+    /* 48px/602=7.7% */
+    margin-bottom: 7.7%;
+}
 
 .hero__btns {}
 
-.btn {}
+/* BUTTON */
 
-.hero__btn {}
+.btn {
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
 
-.hero__img-wrap {
-    display: inline-block;
 }
 
-.hero__img {}
+.btn_theme_blue {
+    background-color: #1E92E7;
+    color: #FFF
+}
+
+.btn_theme_transparent {
+    background-color: transparent;
+    border: 1px solid #1E92E7;
+    color: #000000;
+}
+
+.btn_size_big {
+    padding: 14px 20px 14px 20px;
+}
+
+.btn_size_small {
+    padding: 9px 20px 9px 20px;
+}
+
+.hero__btn {
+    min-width: 244px;
+}
+
+.hero__img-wrap {
+    position: relative;
+    border-radius: 5px 0px 0px 0px;
+    flex-grow: 1;
+}
+
+.hero__img-wrap::before {
+    content: "";
+    display: block;
+    background: url(../img/hero/sky.jpg) center/cover no-repeat;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+}
+
+.hero__img-wrap::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    border-radius: inherit;
+    background: #404F59;
+    z-index: -2;
+    top: -15px;
+    left: 30px;
+
+}
+
+.hero__img {
+    height: 95%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: contain;
+    object-position: bottom center;
+}
