@@ -1,0 +1,34 @@
+.btn {
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.btn_theme_blue {
+    background-color: #1E92E7;
+    color: #FFF
+}
+
+.btn_theme_transparent {
+    background-color: transparent;
+    border: 1px solid #1E92E7;
+    color: #000000;
+}
+
+.btn_size_big {
+    padding: 14px 20px 14px 20px;
+}
+
+.btn_size_small {
+    padding: 9px 20px 9px 20px;
+}
+
+.btn.active {
+    background-color: #1E92E7;
+    color: #FFF;
+}

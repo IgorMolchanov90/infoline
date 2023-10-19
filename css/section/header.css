@@ -1,0 +1,93 @@
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    padding-top: 29px;
+}
+
+.menu {
+    display: flex;
+    /* Расстояние между колонками Flex-контейнера */
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 10px;
+}
+
+.logo {
+    /* Убрать подчёркивание у текста */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo__img {
+    /* Ширина */
+    width: 30px;
+    /* Высота */
+    height: 30px;
+    margin-right: 8px;
+}
+
+.logo__title {
+    /* Все буквы в верхнем регистре */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.nav {}
+
+.nav__list {
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 140%;
+    display: flex;
+    column-gap: 30px;
+}
+
+.header .nav__list {
+    background-color: #404F59;
+    /* Скругление углов */
+    border-radius: 0px 0px 10px 10px;
+    /* Спрятать все что выходит за пределы блока */
+    overflow: hidden;
+    padding: 20px 40px 20px 40px;
+    margin-top: -29px;
+}
+
+.nav__item {}
+
+
+.nav__link {
+    /* Установить эффект плавного перехода */
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+.nav__link:hover {
+    color: rgba(255, 255, 255, 0.40);
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.phone__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.phone__link {
+    color: rgba(255, 255, 255, 0.40);
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.phone__link span {
+    color: #FFF;
+}
