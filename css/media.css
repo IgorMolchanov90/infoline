@@ -18,11 +18,48 @@
     .header__phone {
         display: none;
     }
+
+    .burger {
+        display: block;
+    }
 }
 
 @media (max-width: 768px) {
     :root {
-        --container-width: 1260px;
+        --container-width: 93.1%;
     }
 
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+        width: var(--container-width);
+    }
+
+    .hero {
+        padding-top: 90px;
+        border-bottom-width: 30px;
+    }
+
+    .hero__conent {
+        width: 56.3%;
+        padding-top: 47px;
+    }
+
+    .title {
+        font-size: 31px;
+    }
+
+    .hero__img {
+        left: 0;
+        transform: translate(30px);
+    }
+
+    .rent {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .rent__btns-list {
+        display: none;
+    }
 }

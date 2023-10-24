@@ -9,7 +9,7 @@ font-family: 'Roboto', sans-serif; */
 }
 
 :root {
-    --container-width: 1260px;
+    --container-max-width: 1260px;
 }
 
 html,
@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-    max-width: var(--container-width);
+    max-width: var(--container-max-width);
     margin: 0 auto;
     padding: 0px 40px 0px 40px;
 }
