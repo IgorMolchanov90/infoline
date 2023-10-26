@@ -20,7 +20,10 @@
             <div class="container header__container">
                 <div class="menu">
                     <a href="index.html" class="logo">
-                        <img class="logo__img" src="img/icons/logo-icon.svg" alt="Логотип">
+                        <!-- Логотип -->
+                        <img class="logo__img logo__img_blue" src="img/icons/logo-icon.svg" alt="Логотип">
+                        <!-- Логотип в полноэкранном меню -->
+                        <img class="logo__img logo__img_white" src="img/icons/logo-icon-white.svg">
                         <span class="logo__title">инфолайн</span>
                     </a>
                     <nav class="nav">
@@ -43,6 +46,8 @@
                         <img src="img/icons/tel.svg" alt="Телефон" class="phone__icon">
                         <a class="phone__link" href="tel:+73452388-000">8 (3452) <span>388-000</span></a>
                     </div>
+                    <!-- Телефон в полноэкранном меню -->
+                    <a class="header__menu-mobile-phone" href="tel:+7 (3452) 388-000">+7 (3452) 388-000</a>
                     <!-- Бургер меню -->
                     <div class="burger" id="burger">
                         <span class="burger__el"></span>
@@ -90,6 +95,15 @@
                             <button class="btn btn_theme_transparent rent__btn btn_size_small">Торговые (0)</button>
                         </li>
                     </ul>
+                </div>
+                <div class="rent__select-wrap">
+                    <select class="rent__select" name="plaza" id="plaza">
+                        <option value="" disabled selected>вид площади</option>
+                        <option value="office">Офисы (7)</option>
+                        <option value="conference">конференс-залы
+                            (2)</option>
+                        <option value="comercial">Торговые (0)</option>
+                    </select>
                 </div>
             </div>
             <!-- Слайдер предложений -->
@@ -192,6 +206,7 @@
             </div>
         </section>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

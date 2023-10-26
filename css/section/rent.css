@@ -26,6 +26,46 @@
     column-gap: 10px;
 }
 
+.rent__select-wrap {
+    /* display: none; */
+    position: relative;
+    display: inline-block;
+
+}
+
+.rent__select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #1E92E7;
+    border-radius: 5px;
+    padding: 9px 50px 9px 20px;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+
+}
+
+.rent__select::-ms-expand {
+    display: none;
+}
+
+.rent__select-wrap::after {
+    content: '';
+    width: 15px;
+    height: 10px;
+    display: block;
+    background: url(../../img/rent/arrow_select.svg) no-repeat center/contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    pointer-events: none;
+}
+
 .offers-slider {}
 
 .offers-slider__container {
