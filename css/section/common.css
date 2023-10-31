@@ -66,6 +66,29 @@
     left: 0;
 }
 
+.control_type_disc {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.control_type_disc::before {
+    width: 25%;
+    height: 25%;
+    border-color: #1E92E7;
+}
+
+.control_type_disc:hover {
+    background: #caced1;
+}
+
+
 /* Bullets для слайдеров */
 
 .slider-indicators {

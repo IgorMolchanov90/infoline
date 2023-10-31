@@ -29,7 +29,7 @@
 .rent__select-wrap {
     /* display: none; */
     position: relative;
-    display: inline-block;
+    display: none;
 
 }
 
@@ -54,7 +54,7 @@
 }
 
 .rent__select-wrap::after {
-    content: '';
+    content: "";
     width: 15px;
     height: 10px;
     display: block;

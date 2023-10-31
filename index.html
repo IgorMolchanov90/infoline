@@ -70,6 +70,7 @@
                     </h1>
                     <div class="hero__btns">
                         <button class="btn hero__btn btn_theme_blue btn_size_big">Заказать звонок</button>
+                        <button class="btn hero__btn btn_theme_transparent btn_size_small">аренда площади</button>
                     </div>
                 </div>
                 <div class="hero__img-wrap">
@@ -111,6 +112,8 @@
                 <div class="container offers-slider__container">
                     <button
                         class="control control_prev offers__control offers__control-prev control_type_triangle">назад</button>
+                    <button
+                        class="control control_prev offers__control offers__control-prev control_type_disc">назад</button>
                     <ul class="offers__list">
                         <li class="offer">
                             <div class="offer__content">
@@ -193,6 +196,8 @@
                     </ul>
                     <button
                         class="control control_next offers__control offers__control-next control_type_triangle">вперед</button>
+                    <button
+                        class="control control_next offers__control offers__control-next control_type_disc">вперед</button>
                     <ul class="slider-indicators
                         offers-slider-indicators">
                         <li class="slider-indicator"></li>
@@ -205,6 +210,152 @@
                 </div>
             </div>
         </section>
+        <!-- Услуги -->
+        <section class="services section">
+            <div class="container">
+                <!-- Шапка секции (заголовок и логотип) -->
+                <div class="services__header">
+                    <h2 class="section-title services__title">Услуги компании</h2>
+                    <div class="logo services__logo">
+                        <img src="./img/icons/logo-icon.svg" alt="Логотип" class="logo__img">
+                        <span class="logo__title">инфолайн</span>
+                    </div>
+                </div>
+                <!-- Список услуг -->
+                <ul class="services__list">
+                    <!-- Услуга -->
+                    <li class="service">
+                        <!-- Картинка -->
+                        <div class="service__img">
+                            <img class="service__pic" src="img/icons/wifi.svg" alt="wifi">
+                        </div>
+                        <!-- Блок с описанием -->
+                        <div class="service__content">
+                            <!-- Заголовок блока -->
+                            <h3 class="service__title">Обслуживание офисной техники и интернет</h3>
+                            <!-- Список преимуществ -->
+                            <ul class="service__list">
+                                <li class="service__item">Локальные сети и интернет</li>
+                                <li class="service__item">Контроль доступа</li>
+                                <li class="service__item">Обслуживание офисной техники</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__img">
+                            <img class="service__pic" src="img/icons/Public-utilities.svg" alt="instrument">
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__title">Коммунальные услуги</h3>
+                            <ul class="service__list">
+                                <li class="service__item">Системы отопления и водоснабжения</li>
+                                <li class="service__item">Электрические системы</li>
+                                <li class="service__item">Ремонт и отделка помещений</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__img">
+                            <img class="service__pic" src="img/icons/security.svg" alt="security">
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__title">Охрана и безопастность</h3>
+                            <ul class="service__list">
+                                <li class="service__item">Видеонаблюдение</li>
+                                <li class="service__item">Охранная сигнализация</li>
+                                <li class="service__item">Пожарная сигнализация</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__img">
+                            <img class="service__pic" src="img/icons/learn.svg" alt="learn">
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__title">Обучение сотрудников</h3>
+                            <ul class="service__list">
+                                <li class="service__item">Обучение сотрудников iT программам</li>
+                                <li class="service__item">Проф. переподготовка</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__img">
+                            <img class="service__pic" src="img/icons/diagrama.svg" alt="diagrama">
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__title">Бухгалтерия и юр. услуги</h3>
+                            <ul class="service__list">
+                                <li class="service__item">Бухгалтерия и финансовый учет</li>
+                                <li class="service__item">Юридическое сопровождение</li>
+                                <li class="service__item">Внедрение 1С</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <div class="service__img">
+                            <img class="service__pic" src="img/icons/clining.svg" alt="wifi">
+                        </div>
+                        <div class="service__content">
+                            <h3 class="service__title">Обслуживание офисной техники и интернет</h3>
+                            <ul class="service__list">
+                                <li class="service__item">Уборка дворовой части (снег, листья)</li>
+                                <li class="service__item">Вывоз мусора</li>
+                                <li class="service__item">Уборка помещений</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="gallery section">
+            <div class="container">
+                <h2 class="section-title gallery__title">
+                    фото галерея
+                </h2>
+            </div>
+            <div class="gallery__slider">
+                <div class="gallery__slider-controls">
+                    <div class="container gallery__slider-controls-container">
+                        <button
+                            class="control control_type_disc control_prev gallery__slider-control gallery__slider-control-prev">Назад</button>
+                        <button
+                            class="control control_type_disc gallery__slider-control control_next gallery__slider-control-next">Вперед</button>
+                    </div>
+                </div>
+                <ul class="gallery__list">
+                    <li class="gallery__item">
+                        <img src="./img/gallery/photo1.jpg" alt="фото кабинета" class="gallery__img" width="575"
+                            height="382">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="./img/gallery/photo2.jpg" alt="фото кабинета" class="gallery__img" width="575"
+                            height="382">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="./img/gallery/photo1.jpg" alt="фото кабинета" class="gallery__img" width="575"
+                            height="382">
+                    </li>
+                    <li class="gallery__item">
+                        <img src="./img/gallery/photo1.jpg" alt="фото кабинета" class="gallery__img" width="575"
+                            height="382">
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <ul class="slider-indicators gallery__slider-indicators">
+                    <li class="slider-indicator"></li>
+                    <li class="slider-indicator"></li>
+                    <li class="slider-indicator active"></li>
+                    <li class="slider-indicator"></li>
+                    <li class="slider-indicator"></li>
+                    <li class="slider-indicator"></li>
+                </ul>
+            </div>
+        </section>
+
+
     </div>
     <script src="js/script.js"></script>
 </body>
