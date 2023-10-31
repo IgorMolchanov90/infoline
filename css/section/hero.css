@@ -74,11 +74,6 @@
     min-width: 244px;
 }
 
-.hero__btn:nth-child(2) {
-    color: #FFFFFF;
-    display: none;
-}
-
 .hero__img-wrap {
     position: relative;
     border-radius: 5px 0px 0px 0px;

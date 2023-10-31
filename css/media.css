@@ -11,11 +11,6 @@
         padding: 15px 0px;
     }
 
-    .header__menu-mobile .nav__list {
-        font-size: 4.3vw;
-    }
-
-
     .header__nav-list {
         display: none;
     }
@@ -68,82 +63,21 @@
         display: none;
     }
 
-    .rent__select-wrap {
-        display: inline-block;
+    .contacts {
+        --contacts-left-col: 71.7%;
+        padding: 90px 0px;
+        background: linear-gradient(180deg, #2C3B45 var(--contacts-left-col), #1E92E7 var(--contacts-left-col));
+        position: relative;
     }
 
-    .control_type_triangle {
-        display: none;
+    .contacts::before {
+        width: 100vw;
+        height: var(--contacts-left-col);
     }
 
-    .offers__list {
-        margin-right: calc((100vw - 100%) / -2);
+    .contacts__container {
+        flex-direction: column;
     }
-
-    .offer {
-        width: 307px;
-    }
-
-    .offer__info {
-        padding: 33px 30px 30px;
-    }
-
-    .services {
-        background-color: transparent;
-    }
-
-    .services__logo {
-        display: none;
-    }
-
-    .service {
-        display: block;
-        min-height: 251px;
-    }
-
-    .service__img {
-        width: auto;
-        justify-content: flex-start;
-        background-color: transparent;
-        padding: 30px 20px 0;
-    }
-
-    .service__content {
-        padding: 20px 20px 30px 20px;
-    }
-
-    .control_type_disc {
-        width: 35px;
-        height: 35px;
-    }
-
-    .gallery__slider-controls {
-        top: calc(50% - 35px / 2);
-    }
-
-    .gallery__slider-control-prev {
-        left: 0px;
-    }
-
-    .gallery__slider-control-next {
-        right: 0px;
-    }
-
-    .gallery__list {
-        column-gap: 14px;
-        padding-left: calc((100vw - var(--container-width))/2);
-    }
-
-    .gallery__item {
-        flex: 0 0 432px;
-        height: 285px;
-    }
-
-    .slider-indicator {
-        flex: 0 1 82px;
-    }
-
-
 }
 
 @media (max-width: 480px) {
@@ -161,21 +95,10 @@
     }
 
     .hero__content {
-        margin-bottom: 50px;
-        flex-basis: 59%;
+        width: 100%;
         text-align: center;
         padding-top: 0;
-        padding-right: 0;
     }
-
-    .title {
-        font-size: 36px;
-    }
-
-    .header__menu-mobile .nav__list {
-        font-size: 16px;
-    }
-
 
     .address {
         justify-content: center;
@@ -204,32 +127,4 @@
         top: auto;
     }
 
-    .hero__btns {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 15px;
-    }
-
-    .hero__btn {
-        min-width: 230px;
-        padding: 9px 20px 9px 20px;
-        color: #FFFFFF;
-    }
-
-    .hero__btn:nth-child(2) {
-        display: inline-block;
-    }
-
-    .control_prev {
-        display: none;
-    }
-
-    .control_type_triangle {
-        display: none;
-    }
-
-    .offers__control-next+.control_type_disc {
-        display: flex;
-    }
 }
